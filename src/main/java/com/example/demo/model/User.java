@@ -12,17 +12,17 @@ public class User {
     private String email;
     @Column(name = "password",nullable=false)
     private String password;
-    @Column(name = "typeUser",nullable=false)
-    private String typeUser;
+    @Column(name = "userType",nullable=false)
+    private String userType;
 
     public User(){}
 
-    public User(long idUser, String email, String password, String typeUser) {
+    public User(long idUser, String email, String password, String userType) {
         super();
         this.idUser = idUser;
         this.email = email;
         this.password = password;
-        this.typeUser = typeUser;
+        this.userType = userType;
     }
 
     public long getIdUser() {
@@ -49,11 +49,11 @@ public class User {
         this.password = password;
     }
 
-    public String getTypeUser() {
-        return typeUser;
+    public String getUserType() {
+        return userType;
     }
 
-    public void setTypeUser(String typeUser) {
-        this.typeUser = typeUser;
+    public void setUserType(String typeUser) {
+        this.userType = typeUser;
     }
 }

@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.model.User;
-import com.example.demo.repository.UserRepository;
+import com.example.demo.model.Order;
+import com.example.demo.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
@@ -12,28 +12,27 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 @Service
-public class UserService implements UserRepository {
+public class OrderService implements OrderRepository {
 
     @Autowired
-    private UserRepository userRepository;
-
+    private OrderRepository orderRepository;
     @Override
-    public List<User> findAll() {
+    public List<Order> findAll() {
         return null;
     }
 
     @Override
-    public List<User> findAll(Sort sort) {
+    public List<Order> findAll(Sort sort) {
         return null;
     }
 
     @Override
-    public Page<User> findAll(Pageable pageable) {
+    public Page<Order> findAll(Pageable pageable) {
         return null;
     }
 
     @Override
-    public List<User> findAllById(Iterable<Long> iterable) {
+    public List<Order> findAllById(Iterable<Long> iterable) {
         return null;
     }
 
@@ -48,12 +47,12 @@ public class UserService implements UserRepository {
     }
 
     @Override
-    public void delete(User user) {
+    public void delete(Order order) {
 
     }
 
     @Override
-    public void deleteAll(Iterable<? extends User> iterable) {
+    public void deleteAll(Iterable<? extends Order> iterable) {
 
     }
 
@@ -63,17 +62,17 @@ public class UserService implements UserRepository {
     }
 
     @Override
-    public <S extends User> S save(S s) {
+    public <S extends Order> S save(S s) {
         return null;
     }
 
     @Override
-    public <S extends User> List<S> saveAll(Iterable<S> iterable) {
+    public <S extends Order> List<S> saveAll(Iterable<S> iterable) {
         return null;
     }
 
     @Override
-    public Optional<User> findById(Long aLong) {
+    public Optional<Order> findById(Long aLong) {
         return Optional.empty();
     }
 
@@ -88,12 +87,12 @@ public class UserService implements UserRepository {
     }
 
     @Override
-    public <S extends User> S saveAndFlush(S s) {
+    public <S extends Order> S saveAndFlush(S s) {
         return null;
     }
 
     @Override
-    public void deleteInBatch(Iterable<User> iterable) {
+    public void deleteInBatch(Iterable<Order> iterable) {
 
     }
 
@@ -103,37 +102,37 @@ public class UserService implements UserRepository {
     }
 
     @Override
-    public User getOne(Long aLong) {
+    public Order getOne(Long aLong) {
         return null;
     }
 
     @Override
-    public <S extends User> Optional<S> findOne(Example<S> example) {
+    public <S extends Order> Optional<S> findOne(Example<S> example) {
         return Optional.empty();
     }
 
     @Override
-    public <S extends User> List<S> findAll(Example<S> example) {
+    public <S extends Order> List<S> findAll(Example<S> example) {
         return null;
     }
 
     @Override
-    public <S extends User> List<S> findAll(Example<S> example, Sort sort) {
+    public <S extends Order> List<S> findAll(Example<S> example, Sort sort) {
         return null;
     }
 
     @Override
-    public <S extends User> Page<S> findAll(Example<S> example, Pageable pageable) {
+    public <S extends Order> Page<S> findAll(Example<S> example, Pageable pageable) {
         return null;
     }
 
     @Override
-    public <S extends User> long count(Example<S> example) {
+    public <S extends Order> long count(Example<S> example) {
         return 0;
     }
 
     @Override
-    public <S extends User> boolean exists(Example<S> example) {
+    public <S extends Order> boolean exists(Example<S> example) {
         return false;
     }
 }

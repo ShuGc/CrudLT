@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table (name = "Employee")
+@Table (name = "Client")
 public class Client {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,7 +20,7 @@ public class Client {
 	
 	public Client(){}
 	
-	public Client(long idClient, String fullName, String idOrder, long id_boss) {
+	public Client(long idClient, String fullName, String idOrder) {
 		super();
 		this.idClient = idClient;
 		this.fullName = fullName;
